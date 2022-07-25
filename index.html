@@ -12,55 +12,197 @@
     <!-- Bootstrap Javascript Style -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="style/style.css">
+
     <title>Panda e-Commerce</title>
 
 </head>
 
 <body>
 
-    <header>
+    <header class="container">
 
         <!-- Navbar Code Start -->
 
-        <nav class="navbar navbar-expand-lg fixed-top bg-light mb-3 mt-3">
+        <div>
+            <nav class="navbar navbar-expand-lg fixed-top bg-light container">
 
-            <div class="container">
-                <a class="navbar-brand" href="#">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
 
-                    <img src="images/logo.png" alt="Panda e-Commerce">
+                        <img src="images/logo.png" alt="Panda e-Commerce">
 
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse flex-grow-0" id="navbarScroll">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-0" id="navbarScroll">
 
-                    <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
+                        <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shoes</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Backpack</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link">Subscribe</a>
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Subscribe</a>
+                            </li>
+                        </ul>
 
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
         <!-- End Navbar Code -->
 
+        <!-- Slider Code Start -->
+
+        <section class="pt-5">
+
+            <div id="carouselExampleControls" class="carousel slide pt-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active border rounded p-5 panda-bg-info">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+
+                                <div>
+                                    <h1>Cool Dude Headphone</h1>
+                                    <p>
+                                        This is the best headphone in the world for people who just want to waste time
+                                        in
+                                        front of funky world.
+                                    </p>
+                                    <h1>$420</h1>
+                                    <br>
+                                    <div class="btn slider-btn-buy-now">Buy Now</div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item border rounded p-5 panda-bg-info">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+
+                                <div>
+                                    <h1>Mega LCD TV For Sports</h1>
+                                    <p>
+                                        This is the best headphone in the world for people who just want to waste time
+                                        in
+                                        front of funky world.
+                                    </p>
+                                    <h1>$1200</h1>
+                                    <br>
+                                    <div class="btn slider-btn-buy-now">Buy Now</div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item border rounded p-5 panda-bg-info">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+
+                                <div>
+                                    <h1>X-Box for your living room</h1>
+                                    <p>
+                                        This is the best headphone in the world for people who just want to waste time
+                                        in
+                                        front of funky world.
+                                    </p>
+                                    <h1>$600</h1>
+                                    <br>
+                                    <div class="btn slider-btn-buy-now">Buy Now</div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Slider Code End -->
+
+        <!-- Categories image box start -->
+
+        <section>
+
+            <div class="container text-center my-5">
+                <div class="row g-3">
+
+                    <!-- Individual Category -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border rounded-3 bg-warning d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Watch</h1>
+                            <img src="images/categories/watch.png" alt="Wrist watch">
+                        </div>
+                    </div>
+
+                    <!-- Individual Category -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div
+                            class="p-3 border rounded-3 slider-btn-buy-now d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Bags</h1>
+                            <img src="images/categories/bag.png" alt="Bags">
+                        </div>
+                    </div>
+
+                    <!-- Individual Category -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border rounded-3 bg-primary d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Shoes</h1>
+                            <img src="images/categories/shoes.png" alt="Shoe">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Categories image box end -->
+
     </header>
+
+
+
 
 </body>
 
